@@ -1,0 +1,70 @@
+{
+    "competitors": [
+        {
+            "name": "Isaac Newton",
+            "grade": 10,
+            "competitions": [
+            {
+            "comp_name": "Initial diagnostic",
+            "scores": [
+                {
+                    "ename": "Anatomy and Physiology",
+                    "placement": 12,
+                    "total": 34
+                },
+                {
+                    "ename": "Detector Building",
+                    "placement": 9,
+                    "total": 13
+                },
+                {
+                    "ename": "Optics",
+                    "placement": 5,
+                    "total": 21
+                }
+                ]
+            },
+            {
+                "comp_name": "Rickards",
+                "scores": [
+                ]
+            },
+            {
+                "comp_name": "Boyceville",
+                "scores": [
+                    {
+                        "ename": "Detector Building",
+                        "placement": 127,
+                        "total": 142
+                    },
+                    {
+                        "ename": "Wind Power",
+                        "placement": 91,
+                        "total": 161
+                    }
+                ]
+            },
+            {
+                "comp_name": "Regionals Diagnostic",
+                "scores": [
+                    {
+                        "ename": "Astronomy",
+                        "placement": 8,
+                        "total": 14
+                    },
+                    {
+                        "ename": "Detector Building",
+                        "placement": 10,
+                        "total": 11
+                    },
+                    {
+                        "ename": "Optics",
+                        "placement": 8,
+                        "total": 15
+                    }
+                ]
+            }
+        ]
+        }
+    ]
+}
