@@ -1,0 +1,10 @@
+table {
+    border-collapse: collapse;
+    padding: 5px;
+    width: 75%;
+  }
+  
+  td {
+    border-style: 1px solid;
+    vertical-align: top;
+  }
