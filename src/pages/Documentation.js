@@ -9,15 +9,71 @@ const Documentation = () => {
             <p>
                 <i>This section attempts to explain my thought process behind this site, as well as future ideas I have for improving the site. </i>
             </p>
+
             <h2>
                 General thoughts
             </h2>
             <p>
-                The assignment 
+                The assignment was to create the "best team" out of a spreadsheet of data. I explicitly decided against a machine-learning approach because the lack of data, even if 
+                I tried to supplement it with resurrected data from previous years, would lead to overfitting. Instead, I tried to think through various problems in the current logistics process
+                (as I understand it, as I have heard of and experienced problems directly from logistical issues concerning logistics processes). 
             </p>
+            <p>
+                The primary issues I focused on solving, from most to least important, were:
+                <ol>
+                    <li>Easily finding suitable people to "fit" within a team roster.</li>
+                    <li>Collating all relevant logistics information into one place.</li>
+                    <li>"Predicting the future" of any given partnership to optimize them.</li>
+                </ol>
+            </p>
+
             <h2>
-                
+                Search Functionality
             </h2>
+            <p>
+                The primary issue with logistics team selection is finding appropriate people to fill the team (crazy, I know). From my understanding of the process, people are selected
+                via a mixture of picking the "obvious" best people, then filling in the gaps via memory ("oh, this person is hardworking/is okay at xyz events which we need/etc"). This is, 
+                needless to say, a pretty inefficient way of handling these logistics. Enter <b>epic search functionality</b>
+            </p>
+
+            <h2>
+                Roster Design
+            </h2>
+            <p>
+                A person's working memory can contain, at most, around seven items. Thus, juggling 15+ competitors, as well as block schedules, where events are located, etc. is
+                a large strain on one person and thus inevitably leads to forgetting things -- leading to issues such as scheduling one person to compete in two events in the same block
+                (which actually happened, although not to me). 
+            </p>
+            <p>
+                Thus, I wanted to create a comprehensive place where all of this information could be stored and manipulated. Thus enters the Roster Creator!!!! Blocks/schedule on the left, events in the middle, people on the right.
+            </p>
+            <p>
+                <b>Future plans:</b>
+                <ul>
+                    <li>Multiuser capabilities ??????????</li>
+                    <li>More features based on logistics feedback ahahahahahahaha</li>
+                    <li>Ability to export as CSV</li>
+                </ul>
+            </p>
+
+            <h2>
+                Simulations
+            </h2>
+            <p>
+                This is less of a logistics-only tool and more of a tool that could be helpful for everyone, a la the Albert tool that calculates a predicted AP Score based on how one does
+                on each individual section of an AP test. It works essentially the same as the Albert tool, except how well one does on each individual section is a percentage rather than a 
+                points/total system. 
+            </p>
+            <p>
+                <b>Future plans:</b>
+                <ul>
+                    <li>Add more events through asking each EM how they would section off their event.</li>
+                    <li>Add more ways of splitting the test ("optimal" versus "random" versus "half-and-half" versus...)</li>
+                    <li>Create large database of percentage-section breakdowns for various tests. This also happens to be generally helpful for SciOly competitors (IMO) so probably
+                        could be done by EMs or volunteers or whatever I could also probably just do this myself
+                    </li>
+                </ul>
+            </p>
         </div>
     );
 };
