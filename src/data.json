@@ -5,20 +5,20 @@
             "grade": 10,
             "competitions": [
             {
-            "comp_name": "Initial diagnostic",
+            "comp_name": "Initial Diagnostic",
             "scores": [
                 {
-                    "ename": "Anatomy and Physiology",
+                    "event": "Anatomy and Physiology",
                     "placement": 12,
                     "total": 34
                 },
                 {
-                    "ename": "Detector Building",
+                    "event": "Detector Building",
                     "placement": 9,
                     "total": 13
                 },
                 {
-                    "ename": "Optics",
+                    "event": "Optics",
                     "placement": 5,
                     "total": 21
                 }
@@ -33,12 +33,12 @@
                 "comp_name": "Boyceville",
                 "scores": [
                     {
-                        "ename": "Detector Building",
+                        "event": "Detector Building",
                         "placement": 127,
                         "total": 142
                     },
                     {
-                        "ename": "Wind Power",
+                        "event": "Wind Power",
                         "placement": 91,
                         "total": 161
                     }
@@ -48,23 +48,84 @@
                 "comp_name": "Regionals Diagnostic",
                 "scores": [
                     {
-                        "ename": "Astronomy",
+                        "event": "Astronomy",
                         "placement": 8,
                         "total": 14
                     },
                     {
-                        "ename": "Detector Building",
+                        "event": "Detector Building",
                         "placement": 10,
                         "total": 11
                     },
                     {
-                        "ename": "Optics",
+                        "event": "Optics",
                         "placement": 8,
                         "total": 15
                     }
                 ]
+            },
+            {
+                "comp_name": "Regionals",
+                "scores": []
+            },
+            {
+                "comp_name": "YUSO",
+                "scores": []
+            },
+            {
+                "comp_name": "BirdSO",
+                "scores": []
+            },
+            {
+                "comp_name": "States",
+                "scores": []
             }
         ]
+        },
+        {
+            "name": "Marie Curie",
+            "grade": 11,
+            "competitions": [
+                {
+                    "comp_name": "Initial Diagnostic",
+                    "scores": [
+                        {
+                            "event": "Experimental Design",
+                            "placement": 11,
+                            "total": 18
+                        },
+                        {
+                            "event": "Fermi Questions",
+                            "placement": 12,
+                            "total": 23
+                        },
+                        {
+                            "event": "Write It Do It",
+                            "placement": 13,
+                            "total": 14
+                        }
+                    ]
+                },
+                {
+                    "comp_name": "Rickards",
+                    "scores": []
+                },
+                {
+                    "comp_name": "Boyceville",
+                    "scores": [
+                        {
+                            "event": "Wind Power",
+                            "placement": 103,
+                            "total": 169
+                        },
+                        {
+                            "event": "Fermi Questions",
+                            "placement": 149,
+                            "total": 198
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }

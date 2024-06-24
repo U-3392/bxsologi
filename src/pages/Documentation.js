@@ -40,6 +40,8 @@ const Documentation = () => {
             </p>
             <p>
                 Note that for the sake of time, I didn't convert everything in the spreadsheet given to the JSON -- there are about 40 data entries, which should be enough to demonstrate the search/filter itself.
+                Also, please never mix-and-match Rank versus Score again. This was horrible. I just skipped everyone with events that were mainly score. If I was able to magically control how the data entry worked,
+                I would suggest to just use score for everything and I could probably rig something to show the ranking in parentheses.
             </p>
             <p>
                 <b>Future plans:</b>
