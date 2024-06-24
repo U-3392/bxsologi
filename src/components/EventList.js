@@ -23,7 +23,7 @@ export default function EventList() {
               >
                 <Dropdown.Item eventKey="1">Geologic Mapping</Dropdown.Item>
                 <Dropdown.Item eventKey="2">Astronomy</Dropdown.Item>
-                <Dropdown.Item eventKey="3" active>
+                <Dropdown.Item eventKey="3">
                   Optics
                 </Dropdown.Item>
               </DropdownButton>
