@@ -12,7 +12,7 @@ export default function EventList() {
 
     return (
         <>
-          {['Primary', 'Secondary', 'Success', 'Info', 'Warning', 'Danger'].map(
+          {['Events'].map(
             (variant) => (
               <DropdownButton
                 as={ButtonGroup}
@@ -21,13 +21,11 @@ export default function EventList() {
                 variant={variant.toLowerCase()}
                 title={variant}
               >
-                <Dropdown.Item eventKey="1">Action</Dropdown.Item>
-                <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
+                <Dropdown.Item eventKey="1">Geologic Mapping</Dropdown.Item>
+                <Dropdown.Item eventKey="2">Astronomy</Dropdown.Item>
                 <Dropdown.Item eventKey="3" active>
-                  Active Item
+                  Optics
                 </Dropdown.Item>
-                <Dropdown.Divider />
-                <Dropdown.Item eventKey="4">Separated link</Dropdown.Item>
               </DropdownButton>
             ),
           )}
