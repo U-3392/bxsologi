@@ -33,7 +33,46 @@ const Documentation = () => {
             <p>
                 The primary issue with logistics team selection is finding appropriate people to fill the team (crazy, I know). From my understanding of the process, people are selected
                 via a mixture of picking the "obvious" best people, then filling in the gaps via memory ("oh, this person is hardworking/is okay at xyz events which we need/etc"). This is, 
-                needless to say, a pretty inefficient way of handling these logistics. Enter <b>epic search functionality</b>
+                needless to say, a pretty inefficient way of handling these logistics. 
+            </p>
+            <p>
+                However, we already have the data we need to find people we need -- through competitions! A filtering mechanism that can go past the limitations of Google Sheets is useful, so I made it. 
+            </p>
+            <p>
+                Note that for the sake of time, I didn't convert everything in the spreadsheet given to the JSON -- there are about 10 data entries, which should be enough to demonstrate the search/filter itself.
+                Also, please never mix-and-match Rank versus Score again. This was horrible. I just skipped everyone with events that were mainly score. If I was able to magically control how the data entry worked,
+                I would suggest to just use score for everything that we know (so basically just in diagnostics) and it would be relatively trivial to just show the rank in parentheses 
+            </p>
+            <h3>
+                Disclaimer
+            </h3>
+            <p>To emphasize how simple (if tedious) the conversion from the Google Sheet to JSON is, here's a list showing the structure of the JSON for an individual competitor:
+                <ul>
+                    <li>Name</li>
+                    <li>Grade</li>
+                    <li>
+                        Competitions
+                        <ul>
+                            <li>Competition Name</li>
+                            <li>
+                                Scores
+                                <ul>
+                                    <li>Event name</li>
+                                    <li>Placement</li>
+                                    <li>Total</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </p>
+            <p>
+                <b>Future plans:</b>
+                <ul>
+                    <li>Actually add the entire database LMAO</li>
+                    <li>More filters (e.g., generic "bio events"/"chem events" etc instead of each individual event, more ephemeral traits based on like EM/SD "reviews"?? that might not go over well but it would be interesting...)</li>
+                    <li>Following someone's entire "SciOly career" aka showing placements in past years as well</li>
+                </ul>
             </p>
 
             <h2>
@@ -45,13 +84,13 @@ const Documentation = () => {
                 (which actually happened, although not to me). 
             </p>
             <p>
-                Thus, I wanted to create a comprehensive place where all of this information could be stored and manipulated. Thus enters the Roster Creator!!!! Blocks/schedule on the left, events in the middle, people on the right.
+                Thus, I wanted to create a comprehensive place where all of this information could be stored and manipulated. Thus enters the Roster Creator!! Blocks/schedule on the left, events in the middle, people on the right.
             </p>
             <p>
                 <b>Future plans:</b>
                 <ul>
-                    <li>Multiuser capabilities ??????????</li>
-                    <li>More features based on logistics feedback ahahahahahahaha</li>
+                    <li>Multiuser capabilities ? (pretty hard to do especially when there's an easy solution to it)</li>
+                    <li>More features based on logistics feedback</li>
                     <li>Ability to export as CSV</li>
                 </ul>
             </p>
@@ -68,10 +107,8 @@ const Documentation = () => {
                 <b>Future plans:</b>
                 <ul>
                     <li>Add more events through asking each EM how they would section off their event.</li>
-                    <li>Add more ways of splitting the test ("optimal" versus "random" versus "half-and-half" versus...)</li>
-                    <li>Create large database of percentage-section breakdowns for various tests. This also happens to be generally helpful for SciOly competitors (IMO) so probably
-                        could be done by EMs or volunteers or whatever I could also probably just do this myself
-                    </li>
+                    <li>Add more ways of splitting the test ("optimal" versus "random" versus "half-and-half on every section" versus...)</li>
+                    <li>Create large database of percentage-section breakdowns for various tests. This also happens to be generally helpful for SciOly competitors (IMO)</li>
                 </ul>
             </p>
         </div>

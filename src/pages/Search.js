@@ -1,5 +1,5 @@
 import React from "react";
- 
+import data from '../data.json'
 const Search = () => {
     return (
         <div>
@@ -12,7 +12,7 @@ const Search = () => {
                 </i>
             </p>
         </div>
-    );
-};
+    )
+}
  
 export default Search;
