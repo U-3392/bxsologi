@@ -24,11 +24,7 @@
                 }
                 ]
             },
-            {
-                "comp_name": "Rickards",
-                "scores": [
-                ]
-            },
+            
             {
                 "comp_name": "Boyceville",
                 "scores": [
@@ -63,22 +59,6 @@
                         "total": 15
                     }
                 ]
-            },
-            {
-                "comp_name": "Regionals",
-                "scores": []
-            },
-            {
-                "comp_name": "YUSO",
-                "scores": []
-            },
-            {
-                "comp_name": "BirdSO",
-                "scores": []
-            },
-            {
-                "comp_name": "States",
-                "scores": []
             }
         ]
         },
@@ -106,10 +86,7 @@
                         }
                     ]
                 },
-                {
-                    "comp_name": "Rickards",
-                    "scores": []
-                },
+                
                 {
                     "comp_name": "Boyceville",
                     "scores": [
@@ -122,6 +99,109 @@
                             "event": "Fermi Questions",
                             "placement": 149,
                             "total": 198
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Stephen Hawking",
+            "grade": 12,
+            "competitions": [
+                {
+                    "comp_name":"Initial Diagnostic",
+                    "scores": [
+                        {
+                            "event": "Ecology",
+                            "placement": 7,
+                            "total": 21
+                        },
+                        {
+                            "event": "Fermi Questions",
+                            "placement": 14,
+                            "total": 23
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Galileo Galilei",
+            "grade": 10,
+            "competitions": [
+                {
+                    "comp_name":"Initial Diagnostic",
+                    "scores": [
+                        {
+                            "event": "Flight",
+                            "placement": 16,
+                            "total": 24
+                        }
+                    ]
+                },
+                {
+                    "comp_name": "Boyceville",
+                    "scores": [
+                        {
+                            "event": "Astronomy",
+                            "placement": 120,
+                            "total": 205
+                        },
+                        {
+                            "event": "Geologic Mapping", 
+                            "placement": 164,
+                            "total": 195
+                        }
+                    ]
+                },
+                {
+                    "comp_name":"Regionals Diagnostic",
+                    "scores": [
+                        {
+                            "event": "Astronomy",
+                            "placement": 7,
+                            "total": 14
+                        },
+                        {
+                            "event": "Detector Building",
+                            "placement": 9,
+                            "total": 11
+                        },
+                        {
+                            "event": "Optics",
+                            "placement": 7,
+                            "total": 15
+                        }
+                    ]
+                },
+                {
+                    "comp_name": "BirdSO",
+                    "scores": [
+                        {
+                            "event": "Astronomy",
+                            "placement": 106,
+                            "total": 122
+                        },
+                        {
+                            "event": "Chemistry Lab",
+                            "placement": 4,
+                            "total": 123
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Ada Lovelace",
+            "grade": 10,
+            "competitions": [
+                {
+                    "comp_name":"Initial Diagnostic",
+                    "scores": [
+                        {
+                            "event": "Codebusters",
+                            "placement": 13,
+                            "total": 20
                         }
                     ]
                 }

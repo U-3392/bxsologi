@@ -66,8 +66,8 @@ const Documentation = () => {
             <p>
                 <b>Future plans:</b>
                 <ul>
-                    <li>Multiuser capabilities ??????????</li>
-                    <li>More features based on logistics feedback ahahahahahahaha</li>
+                    <li>Multiuser capabilities ? (pretty hard to do especially when there's an easy solution to it)</li>
+                    <li>More features based on logistics feedback</li>
                     <li>Ability to export as CSV</li>
                 </ul>
             </p>
