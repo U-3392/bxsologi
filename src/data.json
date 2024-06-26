@@ -206,6 +206,328 @@
                     ]
                 }
             ]
-        }
+        },
+        {
+            "name": "Richard Feynman",
+            "grade": 12,
+            "competitions": [
+              {
+                "comp_name": "Initial Diagnostic",
+                "scores": [
+                  {
+                    "event": "Anatomy and Physiology",
+                    "placement": 3,
+                    "total": 34
+                  },
+                  {
+                    "event": "Ecology",
+                    "placement": 6,
+                    "total": 21
+                  },
+                  {
+                    "event": "Microbe Mission",
+                    "placement": 5,
+                    "total": 33
+                  }
+                ]
+              },
+              {
+                "comp_name": "Boyceville",
+                "scores": [
+                  {
+                    "event": "Anatomy and Physiology",
+                    "placement": 70,
+                    "total": 215
+                  },
+                  {
+                    "event": "Ecology",
+                    "placement": 76,
+                    "total": 208
+                  },
+                  {
+                    "event": "Microbe Mission",
+                    "placement": 76,
+                    "total": 193
+                  }
+                ]
+              },
+              {
+                "comp_name": "Regionals Diagnostic",
+                "scores": [
+                  {
+                    "event": "Anatomy and Physiology",
+                    "placement": 16,
+                    "total": 16
+                  },
+                  {
+                    "event": "Microbe Mission",
+                    "placement": 3,
+                    "total": 22
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Rosalind Franklin",
+            "grade": 10,
+            "competitions": [
+              {
+                "comp_name": "Initial Diagnostic",
+                "scores": [
+                  {
+                    "event": "Microbe Mission",
+                    "placement": 14,
+                    "total": 33
+                  }
+                ]
+              },
+              {
+                "comp_name": "Regionals Diagnostic",
+                "scores": [
+                  {
+                    "event": "Astronomy",
+                    "placement": 10,
+                    "total": 14
+                  },
+                  {
+                    "event": "Microbe Mission",
+                    "placement": 8,
+                    "total": 22
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Carl Sagan",
+            "grade": 12,
+            "competitions": [
+              {
+                "comp_name": "Rickards",
+                "scores": [
+                  {
+                    "event": "Chemistry Lab",
+                    "placement": 4,
+                    "total": 183
+                  },
+                  {
+                    "event": "Forensics",
+                    "placement": 4,
+                    "total": 170
+                  }
+                ]
+              },
+              {
+                "comp_name": "Regionals Diagnostic",
+                "scores": [
+                  {
+                    "event": "Experimental Design",
+                    "placement": 2,
+                    "total": 10
+                  },
+                  {
+                    "event": "Forensics",
+                    "placement": 2,
+                    "total": 19
+                  },
+                  {
+                    "event": "Optics",
+                    "placement": 3,
+                    "total": 15
+                  }
+                ]
+              },
+              {
+                "comp_name": "Regionals",
+                "scores": [
+                  {
+                    "event": "Chemistry Lab",
+                    "placement": 1,
+                    "total": 23
+                  },
+                  {
+                    "event": "Forensics",
+                    "placement": 1,
+                    "total": 21
+                  },
+                  {
+                    "event": "Write It Do It",
+                    "placement": 8,
+                    "total": 25
+                  },
+                  {
+                    "event": "Experimental Design",
+                    "placement": 7,
+                    "total": 27
+                  }
+                ]
+              },
+              {
+                "comp_name": "Yale",
+                "scores": [
+                  {
+                    "event": "Chemistry Lab",
+                    "placement": 1,
+                    "total": 48
+                  },
+                  {
+                    "event": "Experimental Design",
+                    "placement": 5,
+                    "total": 46
+                  },
+                  {
+                    "event": "Forensics",
+                    "placement": 2,
+                    "total": 46
+                  }
+                ]
+              },
+              {
+                "comp_name": "States",
+                "scores": [
+                  {
+                    "event": "Chemistry Lab",
+                    "placement": 2,
+                    "total": 59
+                  },
+                  {
+                    "event": "Experimental Design",
+                    "placement": 14,
+                    "total": 59
+                  },
+                  {
+                    "event": "Forensics",
+                    "placement": 10,
+                    "total": 59
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Niels Bohr",
+            "grade": 11,
+            "competitions": [
+              {
+                "comp_name": "Initial Diagnostic",
+                "scores": [
+                  {
+                    "event": "Forensics",
+                    "placement": 18,
+                    "total": 33
+                  }
+                ]
+              },
+              {
+                "comp_name": "Regionals Diagnostic",
+                "scores": [
+                  {
+                    "event": "Forensics",
+                    "placement": 8,
+                    "total": 19
+                  }
+                ]
+              }
+            ]
+        },
+        {
+            "name": "Michael Faraday",
+            "grade": 10,
+            "competitions": [
+              {
+                "comp_name": "Initial Diagnostic",
+                "scores": [
+                  {
+                    "event": "Codebusters",
+                    "placement": 11,
+                    "total": 30
+                  }
+                ]
+              },
+              {
+                "comp_name": "Regionals Diagnostic",
+                "scores": [
+                  {
+                    "event": "Fossils",
+                    "placement": 11,
+                    "total": 13
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "James Clerk Maxwell",
+            "grade": 11,
+            "competitions": [
+              {
+                "comp_name": "Initial Diagnostic",
+                "scores": [
+                  {
+                    "event": "A&P",
+                    "placement": 26,
+                    "total": 34
+                  },
+                  {
+                    "event": "Ecology",
+                    "placement": 11,
+                    "total": 21
+                  },
+                  {
+                    "event": "Microbe Mission",
+                    "placement": 9,
+                    "total": 33
+                  }
+                ]
+              },
+              {
+                "comp_name": "Rickards",
+                "scores": [
+                  {
+                    "event": "Astronomy",
+                    "placement": 99,
+                    "total": 184
+                  },
+                  {
+                    "event": "Microbe Mission",
+                    "placement": 141,
+                    "total": 178
+                  }
+                ]
+              },
+              {
+                "comp_name": "Regionals Diagnostics",
+                "scores": [
+                  {
+                    "event": "Astronomy",
+                    "placement": 6,
+                    "total": 14
+                  },
+                  {
+                    "event": "Microbe Mission",
+                    "placement": 5,
+                    "total": 22
+                  }
+                ]
+              },
+              {
+                "comp_name": "BirdSO",
+                "scores": [
+                  {
+                    "event": "Microbe Mission",
+                    "placement": 64,
+                    "total": 128
+                  },
+                  {
+                    "event": "Astronomy",
+                    "placement": 106,
+                    "total": 122
+                  }
+                ]
+              }
+            ]
+          }          
+
     ]
 }

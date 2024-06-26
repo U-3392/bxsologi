@@ -9,6 +9,8 @@ const Roster = () => {
             <p><i>
                 Integrated for your convenience are the "block" schedules + events (with added room numbers and other info) + competitors. Also, your work can be exported as a spreadsheet file to save more time!
             </i></p>
+
+            <p>whoops i forgot to fix this part</p>
         </div>
     );
 };

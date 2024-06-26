@@ -1,5 +1,8 @@
 import React from "react";
 import data from '../data.json'
+import CompetitorTable from "../components/Table";
+import ComboTable from "../components/ComboTable";
+
 const Search = () => {
     return (
         <div>
@@ -11,6 +14,7 @@ const Search = () => {
                     This section obtains the competition results, which are stored in a database. You can query for certain categories -- for example, you can search for "Top 5%" in "All events." 
                 </i>
             </p>
+            <ComboTable />
         </div>
     )
 }

@@ -1,13 +1,17 @@
-import data from './data.json';
+import data from '../data.json';
 
-function sortName() {
-    
+function TopPercentage() {
+    return(
+        <>
+            
+        </>
+    )
 }
 
-function sortGrade() {
+function EventSort() {
 
 }
 
-function sortComps() {
+export default function FilterView() {
 
 }
