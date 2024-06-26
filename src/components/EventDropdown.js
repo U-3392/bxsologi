@@ -27,7 +27,7 @@ function EventDrop() {
                 </select>
                 <input type="submit"></input>
             </form>
-        ))}
+
 
         </>
         
