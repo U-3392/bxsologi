@@ -36,12 +36,35 @@ const Documentation = () => {
                 needless to say, a pretty inefficient way of handling these logistics. 
             </p>
             <p>
-                However, we already have the data we need to find people we need -- through competitions! A filtering mechanism would be very useful. 
+                However, we already have the data we need to find people we need -- through competitions! A filtering mechanism that can go past the limitations of Google Sheets is useful, so I made it. 
             </p>
             <p>
-                Note that for the sake of time, I didn't convert everything in the spreadsheet given to the JSON -- there are about 40 data entries, which should be enough to demonstrate the search/filter itself.
+                Note that for the sake of time, I didn't convert everything in the spreadsheet given to the JSON -- there are about 10 data entries, which should be enough to demonstrate the search/filter itself.
                 Also, please never mix-and-match Rank versus Score again. This was horrible. I just skipped everyone with events that were mainly score. If I was able to magically control how the data entry worked,
-                I would suggest to just use score for everything and I could probably rig something to show the ranking in parentheses.
+                I would suggest to just use score for everything that we know (so basically just in diagnostics) and it would be relatively trivial to just show the rank in parentheses 
+            </p>
+            <h3>
+                Disclaimer
+            </h3>
+            <p>To emphasize how simple (if tedious) the conversion from the Google Sheet to JSON is, here's a list showing the structure of the JSON for an individual competitor:
+                <ul>
+                    <li>Name</li>
+                    <li>Grade</li>
+                    <li>
+                        Competitions
+                        <ul>
+                            <li>Competition Name</li>
+                            <li>
+                                Scores
+                                <ul>
+                                    <li>Event name</li>
+                                    <li>Placement</li>
+                                    <li>Total</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
             </p>
             <p>
                 <b>Future plans:</b>
