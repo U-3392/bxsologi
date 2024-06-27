@@ -6,7 +6,7 @@ function SearchFilter() {
   const [sortType, setSortType] = useState('relevance');
 
   // Replace this with the URL of your JSON database
-  const databaseUrl = 'https://my-json-server.typicode.com/typicode/demo/posts';
+  const databaseUrl = './data.json';
 
   useEffect(() => {
     fetch(databaseUrl)
