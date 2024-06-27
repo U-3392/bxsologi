@@ -4,6 +4,9 @@ import CompetitorTable from "../components/Table";
 import ComboTable from "../components/ComboTable";
 
 const Search = () => {
+    const getHeadings = () => {
+        return Object.keys(data[0]);
+      }
     return (
         <div>
             <h1>
