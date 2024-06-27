@@ -527,7 +527,57 @@
                 ]
               }
             ]
+          },      
+          {
+            "name": "Gregor Mendel",
+            "grade": 12,
+            "competitions": [
+              {
+                "comp_name": "Initial Diagnostic",
+                "scores": [
+                  {
+                    "event": "Ecology",
+                    "placement": 3,
+                    "total": 21
+                  }
+                ]
+              },
+              {
+                "comp_name": "Regionals Diagnostic",
+                "scores": [
+                  {
+                    "event": "Forestry",
+                    "placement": 2,
+                    "total": 11
+                  },
+                  {
+                    "event": "Fossils",
+                    "placement": 2,
+                    "total": 13
+                  }
+                ]
+              },
+              {
+                "comp_name": "Regionals",
+                "scores": [
+                  {
+                    "event": "Forestry",
+                    "placement": 2,
+                    "total": 22
+                  },
+                  {
+                    "event": "Fossils",
+                    "placement": 5,
+                    "total": 24
+                  },
+                  {
+                    "event": "Ecology",
+                    "placement": 2,
+                    "total": 24
+                  }
+                ]
+              }
+            ]
           }          
-
     ]
 }
