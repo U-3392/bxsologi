@@ -1,9 +1,7 @@
 import React from "react";
-import data from '../data.json';
 import '../gaussian.css';
-import FilterView, {TopPercentage, EventSort} from './Filters';
 
-export default function CompetitorTable( {data} ) {
+export default function CompetitorTable( { data } ) {
     return (
         <>
         <table>
@@ -12,11 +10,11 @@ export default function CompetitorTable( {data} ) {
                 <th>Grade</th>
                 <th>Competitions</th>
             </tr>
-            {data.competitors.map((competitor, index) => (
-                <tr>
-                    <td key={index}>{competitor.name}</td>
-                    <td key={index}>{competitor.grade}</td>
-                    <td key={index}>
+            {data.map((competitor, index) => (
+                <tr key={index}>
+                    <td>{competitor.name}</td>
+                    <td>{competitor.grade}</td>
+                    <td>
                         <ul>
                         {competitor.competitions.map((competition, index) => (
                             <li key={index}>{competition.comp_name}</li>
@@ -25,6 +23,20 @@ export default function CompetitorTable( {data} ) {
                     </td>
                 </tr>
             ))}
+        </table>
+        </>
+    )
+}
+
+function CTtest( [data] ) {
+    return (
+        <>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Grade</th>
+                <th>Competitions</th>
+            </tr>
         </table>
         </>
     )

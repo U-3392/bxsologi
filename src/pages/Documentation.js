@@ -9,6 +9,7 @@ const Documentation = () => {
             <p>
                 <i>This section attempts to explain my thought process behind this site, as well as future ideas I have for improving the site. </i>
             </p>
+            <p><b>VERY IMPORTANT NOTE: </b> a previous version of the site was causing crashes in Chrome browsers (I use Firefox so I didn't notice this). I quickly pulled the affected sections of the site down, so if you viewed a page before and it appeared to have nothing on it, this is because it was one of the affected sections. Sorry for the inconvenience.</p>
 
             <h2>
                 General thoughts
@@ -26,6 +27,9 @@ const Documentation = () => {
                     <li>"Predicting the future" of any given partnership to optimize them.</li>
                 </ol>
             </p>
+            <p>
+                I did not know <b>any JavaScript</b> and I knew <b>very minimal web development</b> before this assignment. This demonstrates my capabilities to learn quickly and to dynamically respond to SciOly demands for projects.
+            </p>
 
             <h2>
                 Search Functionality
@@ -41,7 +45,8 @@ const Documentation = () => {
             <p>
                 Note that for the sake of time, I didn't convert everything in the spreadsheet given to the JSON -- there are about 10 data entries, which should be enough to demonstrate the search/filter itself.
                 Also, please never mix-and-match Rank versus Score again. This was horrible. I just skipped everyone with events that were mainly score. If I was able to magically control how the data entry worked,
-                I would suggest to just use score for everything that we know (so basically just in diagnostics) and it would be relatively trivial to just show the rank in parentheses 
+                I would suggest to just use score for everything that we know (so basically just in diagnostics) and it would be relatively trivial to automatically calculate the rank given the score. There could also
+                be an automatic function that auto-sets if score should be considered, not just rank. 
             </p>
             <h3>
                 Disclaimer
@@ -70,6 +75,7 @@ const Documentation = () => {
                 <b>Future plans:</b>
                 <ul>
                     <li>Actually add the entire database LMAO</li>
+                    <li>Create way to input data (API call to Google Sheet for diagnostics, API call to Duosmium for other competitions)</li>
                     <li>More filters (e.g., generic "bio events"/"chem events" etc instead of each individual event, more ephemeral traits based on like EM/SD "reviews"?? that might not go over well but it would be interesting...)</li>
                     <li>Following someone's entire "SciOly career" aka showing placements in past years as well</li>
                 </ul>
