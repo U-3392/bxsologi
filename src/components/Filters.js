@@ -3,12 +3,30 @@ import CompetitorTable from './Table';
 import '../gaussian.css';
 import SortDropdown from './SortDropdown';
 
+function subScore( { competitions } ) {
+    let averageScore = 0;
+    let numOfComps = 0;
+    competitions.forEach(competition => {
+        competition.scores.forEach(score => {
+            averageScore += (score.total / score.placement);
+            numOfComps++;
+        });
+
+        if (competition.comp_name === "Yale" || competition.comp_name === "States") {
+            averageScore *= 2;
+        }
+        averageScore *= numOfComps;
+    })
+    return averageScore;
+}
+
 function Filter({ data }) {
     const [competitors, setCompetitors] = useState(data.competitors);
     const [sortKey, setSortKey] = useState('name');
     const [eventKey, setEventKey] = useState('');
     const [percentageKey, setPercentageKey] = useState('');
     const [scoreKey, setScoreKey] = useState('');
+    let allEventsSoFar = [...new Set(data.competitors.flatMap(c => c.competitions.flatMap(comp => comp.scores.map(s => s.event))).sort())]
 
     useEffect(() => {
         if (data && data.competitors) {
@@ -44,38 +62,28 @@ function Filter({ data }) {
 
     useEffect(() => {
         let sortedData = [...competitors];
-        sortedData.forEach(competition => {
-            if(competition && competition.scores) {
-                let averageScore = 0;
-            competition.scores.forEach(score => {
-                averageScore += score.total / score.placement;
-            });
-            averageScore /= competition.scores.length;
-    
-            if (competition.comp_name === "Yale" || competition.comp_name === "States") {
-                averageScore *= 2;
-            }
-        }
-        })
-        sortedData.sort((a, b) => a.averageScore - b.averageScore);
+        sortedData = sortedData.sort((a, b) => subScore(b) - subScore(a));
+        let qsize = Math.ceil(sortedData.length/4);
+        let utilData;
 
         switch (scoreKey) {
             case '(experimental, subjective) skill':
-                sortedData = data.competitors;
+                utilData = data.competitors;
                 break;
             case 'A':
-                sortedData = sortedData.slice(0, (sortedData.length)/4);
+                utilData = sortedData.slice(0, qsize);
                 break;
             case 'B': 
-                sortedData = sortedData.slice((sortedData.length)/4, (sortedData.length)/2);
+                utilData = sortedData.slice(qsize, qsize*2);
                 break;
             case 'C':
-                sortedData = sortedData.slice((sortedData.length)/2, (sortedData.length)*3/4);
+                utilData = sortedData.slice(qsize*2, qsize*3);
                 break;
             case 'D': 
+                utilData = sortedData.slice(qsize*3);
                 break;
         }
-        setCompetitors(sortedData);
+        setCompetitors(utilData);
     }, [scoreKey, competitors])
 
     useEffect(() => {
@@ -110,13 +118,25 @@ function Filter({ data }) {
         setCompetitors(sortedData);
     }, [percentageKey, competitors])
 
+    useEffect(() => {
+        let sortedData = [...competitors];
+        switch(setEventKey) {
+            case 'all events':
+                sortedData = data.competitors;
+                break;
+            case allEventsSoFar[0]:
+                sortedData = sortedData.filter(allEventsSoFar[0] == [...new Set(sortedData.competitions.flatMap(competition => competition.scores.map(score => score.event)))])
+        }
+        setCompetitors(sortedData);
+    }, [eventKey, competitors])
+
     return (
         <div>
             <SortDropdown keys={['basics', 'name', 'grade', 'competitions', 'events']} onSortKeyChange={setSortKey} />
 
             <SortDropdown keys={['top', '1%', '5%', '10%', '50%']} onSortKeyChange={setPercentageKey} />
 
-            <SortDropdown keys={['events', ...new Set(data.competitors.flatMap(c => c.competitions.flatMap(comp => comp.scores.map(s => s.event))).sort())]} onSortKeyChange={setEventKey} />
+            <SortDropdown keys={['all events', ...new Set(data.competitors.flatMap(c => c.competitions.flatMap(comp => comp.scores.map(s => s.event))).sort())]} onSortKeyChange={setEventKey} />
 
             <SortDropdown keys={['(experimental, subjective) skill', 'A', 'B', 'C', 'D']} onSortKeyChange={setScoreKey} />
 

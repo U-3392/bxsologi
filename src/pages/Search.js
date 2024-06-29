@@ -35,6 +35,7 @@ const Search = () => {
                         </li>
                     </ul>
                 </i>
+                <br /> <b>VERY IMPORTANT: </b> For some reason, the table updates incorrectly if you go directly from one rank to another (e.g., A to C). Instead, just go from the starting value "(experimental, subjective) skill" to a rank and it should work fine. This is a small but important bug, and I think I know what to do to solve it (introduce better state management such as Redux) but I ran out of time sorry. )
             </p>
             <Filter data={data} />
         </div>

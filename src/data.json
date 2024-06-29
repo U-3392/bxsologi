@@ -619,6 +619,271 @@
                 ]
               }
             ]
-          }                    
+          },
+          {
+            "name": "Alan Turing",
+            "grade": 11,
+            "competitions": [
+                {
+                    "comp_name": "Initial Diagnostic",
+                    "scores": [
+                        {
+                            "event": "Anatomy and Physiology",
+                            "placement": 20,
+                            "total": 34
+                        },
+                        {
+                            "event": "Microbe Mission",
+                            "placement": 2,
+                            "total": 33
+                        }
+                    ]
+                },
+                {
+                    "comp_name": "Regionals Diagnostic",
+                    "scores": [
+                        {
+                            "event": "Microbe Mission",
+                            "placement": 22,
+                            "total": 22
+                        }
+                    ]
+                },
+                {
+                    "comp_name": "Yale",
+                    "scores": [
+                        {
+                            "event": "Disease Detectives",
+                            "placement": 11,
+                            "total": 45
+                        },
+                        {
+                            "event": "Microbe Mission",
+                            "placement": 20,
+                            "total": 44
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+          "name": "Thomas Edison",
+          "grade": 10,
+          "competitions": [
+              {
+                  "comp_name": "Initial Diagnostic",
+                  "scores": [
+                      {
+                          "event": "Anatomy and Physiology",
+                          "placement": 29,
+                          "total": 34
+                      },
+                      {
+                          "event": "Codebusters",
+                          "placement": 11,
+                          "total": 20
+                      }
+                  ]
+              },
+              {
+                  "comp_name": "Regionals Diagnostic",
+                  "scores": [
+                      {
+                          "event": "Dynamic Planet",
+                          "placement": 10,
+                          "total": 13
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+        "name": "Alexander Fleming",
+        "grade": 12,
+        "competitions": [
+            {
+                "comp_name": "Initial Diagnostic",
+                "scores": [
+                    {
+                        "event": "Detector Building",
+                        "placement": 2,
+                        "total": 13
+                    },
+                    {
+                        "event": "Forensics",
+                        "placement": 1,
+                        "total": 33
+                    },
+                    {
+                        "event": "Robot Tour",
+                        "placement": 1,
+                        "total": 21
+                    }
+                ]
+            },
+            {
+                "comp_name": "Rickards",
+                "scores": [
+                    {
+                        "event": "Chemistry Lab",
+                        "placement": 4,
+                        "total": 183
+                    },
+                    {
+                        "event": "Detector Building",
+                        "placement": 95,
+                        "total": 148
+                    },
+                    {
+                        "event": "Forensics",
+                        "placement": 4,
+                        "total": 170
+                    }
+                ]
+            },
+            {
+                "comp_name": "Regionals Diagnostic",
+                "scores": [
+                    {
+                        "event": "Forensics",
+                        "placement": 1,
+                        "total": 19
+                    }
+                ]
+            },
+            {
+                "comp_name": "Regionals",
+                "scores": [
+                    {
+                        "event": "Chemistry Lab",
+                        "placement": 1,
+                        "total": 23
+                    },
+                    {
+                        "event": "Forensics",
+                        "placement": 1,
+                        "total": 21
+                    },
+                    {
+                        "event": "Flight",
+                        "placement": 1,
+                        "total": 20
+                    },
+                    {
+                        "event": "Robot Tour",
+                        "placement": 1,
+                        "total": 15
+                    }
+                ]
+            },
+            {
+                "comp_name": "Yale",
+                "scores": [
+                    {
+                        "event": "Chemistry Lab",
+                        "placement": 1,
+                        "total": 48
+                    },
+                    {
+                        "event": "Detector Building",
+                        "placement": 14,
+                        "total": 31
+                    },
+                    {
+                        "event": "Flight",
+                        "placement": 3,
+                        "total": 37
+                    },
+                    {
+                        "event": "Forensics",
+                        "placement": 2,
+                        "total": 46
+                    },
+                    {
+                        "event": "Robot Tour",
+                        "placement": 14,
+                        "total": 30
+                    }
+                ]
+            },
+            {
+                "comp_name": "States",
+                "scores": [
+                    {
+                        "event": "Air Trajectory",
+                        "placement": 6,
+                        "total": 59
+                    },
+                    {
+                        "event": "Chemistry Lab",
+                        "placement": 2,
+                        "total": 59
+                    },
+                    {
+                        "event": "Flight",
+                        "placement": 17,
+                        "total": 59
+                    },
+                    {
+                        "event": "Forensics",
+                        "placement": 10,
+                        "total": 59
+                    }
+                ]
+            }
+        ]
+    },
+    {
+      "name": "Jane Goodall",
+      "grade": 9,
+      "competitions": [
+          {
+              "comp_name": "Initial Diagnostic",
+              "scores": [
+                  {
+                      "event": "Anatomy and Physiology",
+                      "placement": 18,
+                      "total": 34
+                  }
+              ]
+          },
+          {
+              "comp_name": "Regionals Diagnostic",
+              "scores": [
+                  {
+                      "event": "Anatomy and Physiology",
+                      "placement": 12,
+                      "total": 16
+                  },
+                  {
+                      "event": "Forestry",
+                      "placement": 9,
+                      "total": 11
+                  },
+                  {
+                      "event": "Fossils",
+                      "placement": 5,
+                      "total": 13
+                  }
+              ]
+          },
+          {
+              "comp_name": "Regionals",
+              "scores": [
+                  {
+                      "event": "Fossils",
+                      "placement": 6,
+                      "total": 24
+                  },
+                  {
+                      "event": "Forestry",
+                      "placement": 11,
+                      "total": 22
+                  }
+              ]
+          }
+      ]
+  }
+                                   
     ]
 }
